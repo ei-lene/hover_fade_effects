@@ -15,6 +15,10 @@ $(document).ready(function(){
   // lastly set up an event listener on the image to trigger the functions above 
   $('#gallery a').hover(mouseOn,mouseOff);  
 
+  // add rel attribute to all images
+  $('#gallery a').attr('rel', 'fruit_gallery');
+
+
   // add fancybox plugin
   $('#gallery a').fancybox();
 
